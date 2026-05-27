@@ -1,0 +1,160 @@
+/*  ════════════════════════════════════════════════════
+    Competitive Programming Template — aakash1701
+    ════════════════════════════════════════════════════  */
+#include <bits/stdc++.h>
+using namespace std;
+
+// ─── Type Aliases ─────────────────────────────────────
+typedef long long ll;
+typedef unsigned long long ull;
+typedef pair<int, int> pii;
+typedef pair<ll, ll> pll;
+typedef vector<int> vi;
+typedef vector<ll> vl;
+typedef vector<pii> vpii;
+typedef vector<vi> vvi;
+
+// ─── Constants ────────────────────────────────────────
+const int MOD = 1e9 + 7;
+const int MOD2 = 998244353;
+const int INF = 1e9;
+const ll LINF = 1e18;
+const double PI = acos(-1.0);
+const double EPS = 1e-9;
+
+// ─── Macros ───────────────────────────────────────────
+#define all(v)       (v).begin(), (v).end()
+#define rall(v)      (v).rbegin(), (v).rend()
+#define sz(v)        (int)(v).size()
+#define pb           push_back
+#define eb           emplace_back
+#define fi           first
+#define se           second
+#define FOR(i,a,b)   for(int i=(a); i<(b); i++)
+#define FORR(i,a,b)  for(int i=(a); i>=(b); i--)
+#define each(x,v)    for(auto &x : v)
+
+// ─── Debug (disabled on judge) ────────────────────────
+#ifdef LOCAL
+  #define dbg(x)      cerr << #x << " = " << (x) << "\n"
+  #define dbgv(v)     { cerr << #v << " = ["; for(auto &_x : v) cerr << _x << " "; cerr << "]\n"; }
+  #define dbgp(p)     cerr << #p << " = (" << (p).fi << ", " << (p).se << ")\n"
+#else
+  #define dbg(x)
+  #define dbgv(v)
+  #define dbgp(p)
+#endif
+
+// ─── Common Utilities ─────────────────────────────────
+
+// fast power: (base^exp) % mod
+ll power(ll base, ll exp, ll mod = MOD) {
+    ll result = 1;
+    base %= mod;
+    while (exp > 0) {
+        if (exp & 1) result = result * base % mod;
+        base = base * base % mod;
+        exp >>= 1;
+    }
+    return result;
+}
+
+// modular inverse (when mod is prime)
+ll modinv(ll a, ll mod = MOD) {
+    return power(a, mod - 2, mod);
+}
+
+// gcd and lcm (handles long long)
+ll gcd(ll a, ll b) { return b ? gcd(b, a % b) : a; }
+ll lcm(ll a, ll b) { return a / gcd(a, b) * b; }
+
+// check if a number is prime
+bool isPrime(ll n) {
+    if (n < 2) return false;
+    if (n < 4) return true;
+    if (n % 2 == 0 || n % 3 == 0) return false;
+    for (ll i = 5; i * i <= n; i += 6)
+        if (n % i == 0 || n % (i + 2) == 0) return false;
+    return true;
+}
+
+// sieve of eratosthenes up to n
+vi sieve(int n) {
+    vector<bool> is_prime(n + 1, true);
+    vi primes;
+    is_prime[0] = is_prime[1] = false;
+    for (int i = 2; i <= n; i++) {
+        if (is_prime[i]) {
+            primes.pb(i);
+            for (ll j = (ll)i * i; j <= n; j += i)
+                is_prime[j] = false;
+        }
+    }
+    return primes;
+}
+
+// prefix sum builder
+template<typename T>
+vector<T> buildPrefix(const vector<T> &a) {
+    int n = a.size();
+    vector<T> pre(n + 1, 0);
+    FOR(i, 0, n) pre[i + 1] = pre[i] + a[i];
+    return pre;
+}
+
+// binary search — first index where check(mid) is true
+template<typename F>
+ll bsearch(ll lo, ll hi, F check) {
+    while (lo < hi) {
+        ll mid = lo + (hi - lo) / 2;
+        if (check(mid)) hi = mid;
+        else lo = mid + 1;
+    }
+    return lo;
+}
+
+// DSU (Union-Find)
+struct DSU {
+    vi parent, rank_;
+    int components;
+
+    DSU(int n) : parent(n), rank_(n, 0), components(n) {
+        iota(all(parent), 0);
+    }
+
+    int find(int x) {
+        return parent[x] == x ? x : parent[x] = find(parent[x]);
+    }
+
+    bool unite(int x, int y) {
+        x = find(x); y = find(y);
+        if (x == y) return false;
+        if (rank_[x] < rank_[y]) swap(x, y);
+        parent[y] = x;
+        if (rank_[x] == rank_[y]) rank_[x]++;
+        components--;
+        return true;
+    }
+
+    bool connected(int x, int y) { return find(x) == find(y); }
+};
+
+// ─── Solve ────────────────────────────────────────────
+void solve() {
+    // your solution here
+    
+}
+
+// ─── Main ─────────────────────────────────────────────
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+
+    return 0;
+}

@@ -7,7 +7,7 @@
   <a href="https://www.codechef.com/users/aakash1701">
     <img src="https://img.shields.io/badge/CodeChef-3★_aakash1701-blue?style=for-the-badge&logo=codechef&logoColor=white" alt="CodeChef Profile"/>
   </a>
-  <img src="https://img.shields.io/badge/Rating-1611-blue?style=for-the-badge" alt="Rating"/>
+  <img src="https://img.shields.io/badge/Rating-1645-blue?style=for-the-badge" alt="Rating"/>
   <img src="https://img.shields.io/badge/League-Gold-gold?style=for-the-badge" alt="League"/>
   <img src="https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++"/>
 </p>
@@ -20,11 +20,11 @@
 |---|---|
 | **Name** | Aakash Singh Mahori |
 | **Username** | [3★ aakash1701](https://www.codechef.com/users/aakash1701) |
-| **Rating** | **1611** (Provisional) |
+| **Rating** | **1645** (Provisional) |
 | **Stars** | ⭐⭐⭐ (3-Star) |
 | **League** | 🥇 Gold |
-| **Global Rank** | #15,633 |
-| **Country Rank** | #14,245 (India 🇮🇳) |
+| **Global Rank** | #11,837 |
+| **Country Rank** | #10,668 (India 🇮🇳) |
 | **Institution** | GB Pant University of Agriculture and Technology, Pantnagar, Uttarakhand |
 
 ---
@@ -34,6 +34,8 @@
 ```
 CodeChef/
 ├── README.md
+├── template.txt
+├── Advise_to_self.txt
 └── Starters/
     ├── START237D/          # Starters 237 — Div 4 (5 problems solved)
     │   ├── 1. ELECTION.cpp
@@ -56,7 +58,13 @@ CodeChef/
     │   ├── 4. Planting Roses.cpp
     │   └── Bonus 1. Tour Plan.cpp
     │
-    └── START240B/          # Starters 240 — Div 2 (upcoming)
+    └── START240B/          # Starters 240 — Div 2 (4 scored + 2 bonus)
+        ├── 1. Comfortable Seating.cpp
+        ├── 2. Binary Smile.cpp
+        ├── 3. Partition.cpp
+        ├── 4. Counting_LCM_easy.cpp
+        ├── Bonus 1. Points Table.cpp
+        └── Bonus 2. Counting Characters.cpp
 ```
 
 ---
@@ -68,9 +76,9 @@ CodeChef/
 | [Starters 237](https://www.codechef.com/START237D) | Div 4 | **5 / 7** | 0 | Solved 5 |
 | [Starters 238](https://www.codechef.com/START238D) | Div 4 | **5 / 7** | 0 | Solved 5 |
 | [Starters 239](https://www.codechef.com/START239C) | Div 3 | **4 / 7** | 1 | Solved 4 + 1 bonus |
-| [Starters 240](https://www.codechef.com/START240B) | Div 2 | — | — | In progress |
+| [Starters 240](https://www.codechef.com/START240B) | Div 2 | **4 / 7** | 2 | Solved 4 + 2 bonus |
 
-> **14 scored + 1 bonus = 15 total problems solved** across 3 rated contests.
+> **18 scored + 3 bonus = 21 total problems solved** across 4 rated contests.
 
 ---
 
@@ -108,6 +116,5 @@ CodeChef/
 ---
 
 <p align="center">
-  <i>Grinding one contest at a time 🚀</i>
+  <i>Feel free to explore the solutions and learn from them. </i>
 </p>
-

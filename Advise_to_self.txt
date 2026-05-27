@@ -1,0 +1,26 @@
+use "\n" instead of endl.
+use fast I/O 
+
+=== CODING STYLE FIXES ===
+- Pick tabs OR spaces — stop mixing them in the same file.
+- Standardize test case variable: always use 't' (lowercase).
+- Use emplace_back over push_back where possible.
+
+=== TEMPLATE MUST-HAVES ===
+- Always start with fast I/O:
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+- Add debug macros for local testing.
+
+=== CONCEPTS TO LEARN ===
+- Segment Trees / Fenwick Trees (BIT) — unlocks range query problems.
+- BFS / DFS — most Div 2 problems need graph traversal.
+- Classical DP — knapsack, LCS, coin change, then 2D DP.
+- DSU (Union-Find) — essential for connectivity problems.
+- Tree DP and LCA — tree problems dominate Div 2+.
+- Monotonic Stack / Queue — useful for next-greater-element type problems.
+
+=== CONTEST HABITS ===
+- Read ALL problems first before coding.
+- Don't brute force when constraints are large (see: Final Element O(n^2) mistake).
+- Practice upsolving: solve the 2 problems you couldn't finish after every contest.
