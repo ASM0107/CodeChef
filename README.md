@@ -86,15 +86,17 @@ CodeChef/
 
 | Technique | Frequency | Example Problems |
 |-----------|:---------:|-----------------|
-| Math & Arithmetic | ██████████ 67% | ELECTION, MAKETRIANGLE, Tour Plan, Cricket Nets |
-| Greedy | █████░░░░░ 33% | Dividing Candies, WECREC |
-| Sorting | ████░░░░░░ 27% | MAKETRIANGLE, WECREC, Planting Roses |
-| Case Analysis | █████░░░░░ 33% | Finding All, Min Max Queries |
-| Binary Search | ██░░░░░░░░ 13% | Planting Roses (nested) |
-| Prefix Sums | ██░░░░░░░░ 13% | Planting Roses |
-| Hash Maps | █░░░░░░░░░ 7% | Beginnings & Endings |
-| Modular Arithmetic | █░░░░░░░░░ 7% | Modular Mirrors |
-| Bitwise / XOR | █░░░░░░░░░ 7% | Final Element |
+| Math & Arithmetic | ████████░░ 57% | ELECTION, MAKETRIANGLE, Tour Plan, Points Table, Partition |
+| Greedy | █████░░░░░ 29% | Dividing Candies, WECREC, Comfortable Seating |
+| Case Analysis | ████░░░░░░ 24% | Finding All, Min Max Queries, Points Table |
+| Sorting | ████░░░░░░ 19% | MAKETRIANGLE, WECREC, Planting Roses |
+| Hash Maps | ███░░░░░░░ 14% | Beginnings & Endings, Partition |
+| String Processing | ███░░░░░░░ 14% | Easy Speaking, Binary Smile, Counting Characters |
+| Number Theory / Sieve | ██░░░░░░░░ 10% | Counting LCM (Easy), Modular Mirrors |
+| Binary Search | █░░░░░░░░░ 5% | Planting Roses (nested) |
+| Prefix Sums | █░░░░░░░░░ 5% | Planting Roses, Counting LCM (prefix) |
+| Precomputation | █░░░░░░░░░ 5% | Counting LCM (Easy) |
+| Bitwise / XOR | █░░░░░░░░░ 5% | Final Element |
 
 ---
 
